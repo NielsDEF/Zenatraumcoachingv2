@@ -1,0 +1,17 @@
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\ZenaTraumacoaching.DAL.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\ZenaTraumacoaching.DAL.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\Dapper.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Configuration.ConfigurationManager.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Security.AccessControl.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Security.Permissions.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Security.Principal.Windows.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\Dapper.xml
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Configuration.ConfigurationManager.xml
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Security.AccessControl.xml
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Security.Permissions.xml
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Security.Principal.Windows.xml
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.csprojAssemblyReference.cache
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.csproj.CoreCompileInputs.cache
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.csproj.CopyComplete
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.pdb

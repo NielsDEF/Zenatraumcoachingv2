@@ -1,0 +1,9 @@
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\ZenaTraumacoaching.Logic.csprojAssemblyReference.cache
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\ZenaTraumacoaching.Logic.csproj.CoreCompileInputs.cache
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\Logic.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\Logic.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\ZenaTraumacoaching.DAL.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\ZenaTraumacoaching.DAL.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\ZenaTraumacoaching.Logic.csproj.CopyComplete
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\Logic.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\Logic.pdb
