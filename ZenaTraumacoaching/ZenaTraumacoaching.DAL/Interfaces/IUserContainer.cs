@@ -12,7 +12,6 @@ namespace ZenaTraumacoaching.DAL.Interfaces
         string RequestPassword(string username);
         void AddUserToDatabase(UserDTO user);
         int GetUserID(string username);
-        string GetUserType(string username);
         UserDTO PullUserFromDatabase(int userid);
 
     }

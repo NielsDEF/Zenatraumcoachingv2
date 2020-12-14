@@ -1,19 +1,19 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj": {}
+    "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj": {
+    "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj",
+        "projectUniqueName": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj",
         "projectName": "ZenaTraumacoaching.Logic",
-        "projectPath": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj",
+        "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj",
         "frameworks": {
           "net472": {
             "projectReferences": {
-              "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj": {
-                "projectPath": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj"
+              "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj": {
+                "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj"
               }
             }
           }
@@ -23,24 +23,24 @@
         "net472": {}
       }
     },
-    "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj": {
+    "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj": {
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj",
+        "projectUniqueName": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj",
         "projectName": "ZenaTraumacoaching.DAL",
-        "projectPath": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj"
+        "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching.DAL\\ZenaTraumacoaching.DAL.csproj"
       },
       "frameworks": {
         "net472": {}
       }
     },
-    "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj": {
+    "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
+        "projectUniqueName": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
         "projectName": "ZenaTraumacoaching",
-        "projectPath": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
+        "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
         "packagesPath": "C:\\Users\\Niels\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\ZenaTraumacoaching\\obj\\",
+        "outputPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -60,8 +60,8 @@
           "netcoreapp3.1": {
             "targetAlias": "netcoreapp3.1",
             "projectReferences": {
-              "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj": {
-                "projectPath": "C:\\Users\\Niels\\source\\repos\\Zenatraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj"
+              "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj": {
+                "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj"
               }
             }
           }
@@ -79,6 +79,10 @@
             "Dapper": {
               "target": "Package",
               "version": "[2.0.78, )"
+            },
+            "System.Data.SqlClient": {
+              "target": "Package",
+              "version": "[4.8.2, )"
             }
           },
           "imports": [

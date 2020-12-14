@@ -46,14 +46,7 @@ namespace ZenaTraumacoaching.DAL.DTO
             get { return gender; }
         }
 
-        private string usertype;
-
-        public string Usertype
-        {
-            get { return usertype; }
-        }
-
-        public UserDTO(string username, string password, string firstname, string lastname, string email, string gender, string usertype)
+        public UserDTO(string username, string password, string firstname, string lastname, string email, string gender)
         {
             this.username = username;
             this.password = password;
@@ -61,15 +54,13 @@ namespace ZenaTraumacoaching.DAL.DTO
             this.lastname = lastname;
             this.emailadress = email;
             this.gender = gender;
-            this.usertype = usertype;
         }
-        public UserDTO(string firstname, string lastname, string email, string gender, string usertype)
+        public UserDTO(string firstname, string lastname, string email, string gender)
         {
             this.firstname = firstname;
             this.lastname = lastname;
             this.emailadress = email;
             this.gender = gender;
-            this.usertype = usertype;
         }
     }
 }

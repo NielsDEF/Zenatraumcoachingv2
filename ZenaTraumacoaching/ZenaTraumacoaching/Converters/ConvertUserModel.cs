@@ -11,7 +11,7 @@ namespace ZenaTraumacoaching.Converters
     {
         public User ConvertModelToUser(UserModel model)
         {
-            User user = new User(model.Username, model.Password, model.Firstname, model.Lastname, model.Email, model.Gender, model.usertype);
+            User user = new User(model.Username, model.Password, model.Firstname, model.Lastname, model.Email, model.Gender);
 
             return user;
         }

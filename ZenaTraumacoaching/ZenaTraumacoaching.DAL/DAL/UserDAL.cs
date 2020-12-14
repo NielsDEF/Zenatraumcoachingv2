@@ -10,7 +10,7 @@ using System.Data;
 
 namespace ZenaTraumacoaching.DAL.DAL
 {
-    class UserDAL : IUserContainer
+    public class UserDAL : IUserContainer
     {
         Connection connection;
         public UserDAL()
@@ -24,7 +24,7 @@ namespace ZenaTraumacoaching.DAL.DAL
             SqlDataReader rdr;
             connection.StartConnection();
             SqlCommand cmd = connection.Conn.CreateCommand();
-            cmd.CommandText = "SELECT Password FROM User WHERE Username = '" + username + "'";
+            cmd.CommandText = "SELECT Password FROM [User] WHERE Username = '" + username + "'";
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
@@ -40,21 +40,20 @@ namespace ZenaTraumacoaching.DAL.DAL
         {
             connection.StartConnection();
             SqlCommand cmd = connection.Conn.CreateCommand();
-            cmd.CommandText = "INSERT INTO User(Username, Password, FirstName, LastName ,Email,Gender,UserType) VALUES(?Username, ?Password, ?FirstName, ?LastName, ?Email, ?Gender, ?UserType )";
-            cmd.Parameters.AddWithValue("?Username", user.Username);
-            cmd.Parameters.AddWithValue("?Password", user.Password);
-            cmd.Parameters.AddWithValue("?FirstName", user.Firstname);
-            cmd.Parameters.AddWithValue("?LastName", user.Lastname);
-            cmd.Parameters.AddWithValue("?Email", user.Emailadress);
-            cmd.Parameters.AddWithValue("?Gender", user.Gender);
-            cmd.Parameters.AddWithValue("?UserType", user.Usertype);
+            cmd.CommandText = "INSERT INTO [User](Username, Password, FirstName, LastName ,Email,Gender) VALUES(@Username, @Password, @FirstName, @LastName, @Email, @Gender  )";
+            cmd.Parameters.AddWithValue("@Username", user.Username);
+            cmd.Parameters.AddWithValue("@Password", user.Password);
+            cmd.Parameters.AddWithValue("@FirstName", user.Firstname);
+            cmd.Parameters.AddWithValue("@LastName", user.Lastname);
+            cmd.Parameters.AddWithValue("@Email", user.Emailadress);
+            cmd.Parameters.AddWithValue("@Gender", user.Gender);
             cmd.ExecuteNonQuery();
             connection.CloseConnection();
         }
 
         public UserDTO PullUserFromDatabase(int userid)
         {
-            var result = ExecuteSqlReader("SELECT Firstname, LastName, Gender, Email, Usertype FROM User WHERE UserID = @ID", new List<SqlParameter>()
+            var result = ExecuteSqlReader("SELECT Firstname, LastName, Gender, Email FROM [User] WHERE UserID = @ID", new List<SqlParameter>()
             {
                 new SqlParameter("@ID", userid),
 
@@ -66,7 +65,7 @@ namespace ZenaTraumacoaching.DAL.DAL
 
         private UserDTO DataTableToUser(DataTable result, int rowIndex)
         {
-            return new UserDTO(result.Rows[rowIndex]["firstname"].ToString(), result.Rows[rowIndex]["lastname"].ToString(), result.Rows[rowIndex]["gender"].ToString(), result.Rows[rowIndex]["email"].ToString(), result.Rows[rowIndex]["Usertype"].ToString());
+            return new UserDTO(result.Rows[rowIndex]["firstname"].ToString(), result.Rows[rowIndex]["lastname"].ToString(), result.Rows[rowIndex]["email"].ToString(), result.Rows[rowIndex]["gender"].ToString());
         }
 
 
@@ -137,7 +136,7 @@ namespace ZenaTraumacoaching.DAL.DAL
             SqlDataReader rdr;
             connection.StartConnection();
             SqlCommand cmd = connection.Conn.CreateCommand();
-            cmd.CommandText = "SELECT UserID FROM User WHERE Username = '" + username + "'";
+            cmd.CommandText = "SELECT UserID FROM [User] WHERE Username = '" + username + "'";
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
@@ -147,24 +146,6 @@ namespace ZenaTraumacoaching.DAL.DAL
             cmd.Dispose();
             connection.CloseConnection();
             return output;
-        }
-        public string GetUserType(string username)
-        {
-            string output = null;
-            SqlDataReader rdr;
-            connection.StartConnection();
-            SqlCommand cmd = connection.Conn.CreateCommand();
-            cmd.CommandText = "SELECT UserID FROM User WHERE Username = '" + username + "'";
-            rdr = cmd.ExecuteReader();
-            while (rdr.Read())
-            {
-                output = rdr["UserID"].ToString();
-            }
-            rdr.Close();
-            cmd.Dispose();
-            connection.CloseConnection();
-            return output;
-
         }
     }
 }

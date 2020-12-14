@@ -15,3 +15,5 @@ C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\
 C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.csproj.CopyComplete
 C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.dll
 C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\obj\Debug\ZenaTraumacoaching.DAL.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching.DAL\bin\Debug\System.Data.SqlClient.xml

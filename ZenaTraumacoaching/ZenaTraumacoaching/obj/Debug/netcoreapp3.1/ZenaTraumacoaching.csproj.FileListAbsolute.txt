@@ -38,3 +38,15 @@ C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\obj\Debug\netc
 C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.genruntimeconfig.cache
 C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.csproj.CopyComplete
 C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Dapper.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Logic.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\ZenaTraumacoaching.DAL.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Logic.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\ZenaTraumacoaching.DAL.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\System.Data.SqlClient.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\runtimes\win-arm64\native\sni.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\runtimes\win-x64\native\sni.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\sni.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Home.cshtml.g.cs
+C:\Users\Niels\source\repos\Zenatraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profiel.cshtml.g.cs

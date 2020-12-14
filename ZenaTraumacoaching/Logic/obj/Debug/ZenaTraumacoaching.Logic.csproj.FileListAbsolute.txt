@@ -7,3 +7,5 @@ C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\ZenaTraumacoachin
 C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\ZenaTraumacoaching.Logic.csproj.CopyComplete
 C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\Logic.dll
 C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\obj\Debug\Logic.pdb
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\System.Data.SqlClient.dll
+C:\Users\Niels\source\repos\Zenatraumacoaching\Logic\bin\Debug\System.Data.SqlClient.xml

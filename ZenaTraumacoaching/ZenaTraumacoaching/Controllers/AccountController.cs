@@ -32,7 +32,7 @@ namespace ZenaTraumacoaching.Controllers
         public ActionResult RegistreerClick(UserModel model)
         {
             ConvertUserModel converter = new ConvertUserModel();
-            UserContainer userContainer = new UserContainer(new UserDTO());
+            UserContainer userContainer = new UserContainer(new UserDAL());
 
             userContainer.AddUserToDataBase(converter.ConvertModelToUser(model));
             return View("Login");
@@ -47,7 +47,6 @@ namespace ZenaTraumacoaching.Controllers
                 if (userContainer.ComparePasswords(model.Username, model.Password))
                 {
                     HttpContext.Session.SetInt32("UserID", userContainer.GetUserID(model.Username));
-                    HttpContext.Session.SetString("UserType", userContainer.GetUserType(model.Username));
 
                     ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
                     User user = userContainer.PullUserFromDatabase(Convert.ToInt32(HttpContext.Session.GetInt32("UserID")));
@@ -62,6 +61,16 @@ namespace ZenaTraumacoaching.Controllers
                 }
             }
             return View("Home");
+        }
+        [HttpGet]
+        public IActionResult Profiel(ProfileViewModel model)
+        {
+            ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
+            UserContainer userContainer = new UserContainer(new UserDAL());
+            User user = userContainer.PullUserFromDatabase(Convert.ToInt32(HttpContext.Session.GetInt32("UserID")));
+            ProfileViewModel vm = new ProfileViewModel();
+            vm = profileconv.UserToViewModel(user);
+            return View(vm);
         }
     }
 }

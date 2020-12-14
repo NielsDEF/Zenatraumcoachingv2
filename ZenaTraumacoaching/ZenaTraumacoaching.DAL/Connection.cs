@@ -11,7 +11,7 @@ namespace ZenaTraumacoaching.DAL
 {
     public class Connection
     {
-        string connectionstring = "Server=mssql.fhict.local;Database=dbi448154;User Id=dbi448154;Password=Niels2001";
+        string connectionstring = "Server=mssql.fhict.local;Database=dbi448154;Uid=dbi448154;Pwd=Niels2001";
         SqlConnection conn = null;
         public SqlConnection Conn { get => conn; }
 

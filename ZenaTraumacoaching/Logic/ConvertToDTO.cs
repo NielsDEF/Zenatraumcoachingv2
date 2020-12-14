@@ -13,7 +13,7 @@ namespace Logic
     {
         public UserDTO ConvertUserToDTO(User user)
         {
-            UserDTO userDTO = new UserDTO(user.Username, user.Password, user.Firstname, user.Lastname, user.Emailadress, user.Gender, user.Usertype);
+            UserDTO userDTO = new UserDTO(user.Username, user.Password, user.Firstname, user.Lastname, user.Emailadress, user.Gender);
             return userDTO;
         }
     }

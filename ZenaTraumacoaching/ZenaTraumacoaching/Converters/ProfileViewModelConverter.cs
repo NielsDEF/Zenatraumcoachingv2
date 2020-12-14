@@ -16,8 +16,7 @@ namespace ZenaTraumacoaching.Converters
                 Firstname = userdto.Firstname,
                 Lastname = userdto.Lastname,
                 Email = userdto.Emailadress,
-                Gender = userdto.Gender,
-                Usertype = userdto.Usertype
+                Gender = userdto.Gender
             };
             return profileviewmodel;
         }

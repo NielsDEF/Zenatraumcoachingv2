@@ -26,12 +26,10 @@ namespace Logic
         private string gender;
         public string Gender { get => gender; }
 
-        private string usertype;
-        public string Usertype { get => usertype; }
 
 
 
-        public User(string username, string password, string firstname, string lastname, string email, string gender, string usertype)
+        public User(string username, string password, string firstname, string lastname, string email, string gender)
 
         {
             this.username = username;
@@ -40,7 +38,6 @@ namespace Logic
             this.lastname = lastname;
             this.emailadress = email;
             this.gender = gender;
-            this.usertype = usertype;
 
         }
     }
