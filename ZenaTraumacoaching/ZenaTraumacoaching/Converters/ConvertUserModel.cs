@@ -9,7 +9,7 @@ namespace ZenaTraumacoaching.Converters
 {
     public class ConvertUserModel
     {
-        public User ConvertModelToUser(UserModel model)
+        public User ConvertModelToUser(RegistratieViewModel model)
         {
             User user = new User(model.Username, model.Password, model.Firstname, model.Lastname, model.Email, model.Gender);
 

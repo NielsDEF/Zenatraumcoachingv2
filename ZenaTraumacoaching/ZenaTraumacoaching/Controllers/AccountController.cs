@@ -29,16 +29,16 @@ namespace ZenaTraumacoaching.Controllers
             return View();
         }
         [HttpPost]
-        public ActionResult RegistreerClick(UserModel model)
+        public ActionResult RegistreerClick(RegistratieViewModel model)
         {
             ConvertUserModel converter = new ConvertUserModel();
-            UserContainer userContainer = new UserContainer(new UserDAL());
-
-            userContainer.AddUserToDataBase(converter.ConvertModelToUser(model));
+            User user = converter.ConvertModelToUser(model);
+            user.SetDal(new UserDAL());
+            user.AddUserToDataBase(converter.ConvertModelToUser(model));
             return View("Login");
         }
         [HttpPost]
-        public ActionResult LoginClick(UserModel model)
+        public ActionResult LoginClick(LoginViewModel model)
         {
             UserContainer userContainer = new UserContainer(new UserDAL());
 

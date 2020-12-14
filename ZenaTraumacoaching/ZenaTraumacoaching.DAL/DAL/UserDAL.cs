@@ -10,20 +10,20 @@ using System.Data;
 
 namespace ZenaTraumacoaching.DAL.DAL
 {
-    public class UserDAL : IUserContainer
+    public class UserDAL : Connection, IUserContainer, IUser
     {
-        Connection connection;
+
         public UserDAL()
         {
-            connection = new Connection();
+
         }
 
         public string RequestPassword(string username)
         {
             string output = null;
             SqlDataReader rdr;
-            connection.StartConnection();
-            SqlCommand cmd = connection.Conn.CreateCommand();
+            StartConnection();
+            SqlCommand cmd = Conn.CreateCommand();
             cmd.CommandText = "SELECT Password FROM [User] WHERE Username = '" + username + "'";
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
@@ -32,14 +32,14 @@ namespace ZenaTraumacoaching.DAL.DAL
             }
             rdr.Close();
             cmd.Dispose();
-            connection.CloseConnection();
+            CloseConnection();
             return output;
         }
 
         public void AddUserToDatabase(UserDTO user)
         {
-            connection.StartConnection();
-            SqlCommand cmd = connection.Conn.CreateCommand();
+            StartConnection();
+            SqlCommand cmd = Conn.CreateCommand();
             cmd.CommandText = "INSERT INTO [User](Username, Password, FirstName, LastName ,Email,Gender) VALUES(@Username, @Password, @FirstName, @LastName, @Email, @Gender  )";
             cmd.Parameters.AddWithValue("@Username", user.Username);
             cmd.Parameters.AddWithValue("@Password", user.Password);
@@ -48,7 +48,7 @@ namespace ZenaTraumacoaching.DAL.DAL
             cmd.Parameters.AddWithValue("@Email", user.Emailadress);
             cmd.Parameters.AddWithValue("@Gender", user.Gender);
             cmd.ExecuteNonQuery();
-            connection.CloseConnection();
+            CloseConnection();
         }
 
         public UserDTO PullUserFromDatabase(int userid)
@@ -73,7 +73,7 @@ namespace ZenaTraumacoaching.DAL.DAL
         {
             try
             {
-                using (var cmd = connection.Conn.CreateCommand())
+                using (var cmd = Conn.CreateCommand())
                 {
                     cmd.CommandText = query;
                     if (parameters != null)
@@ -96,11 +96,11 @@ namespace ZenaTraumacoaching.DAL.DAL
         {
 
             DataTable dataTable = new DataTable();
-            using (var conn = connection.Conn)
+            using (var conn = Conn)
 
                 try
                 {
-                    using (var cmd = connection.Conn.CreateCommand())
+                    using (var cmd = Conn.CreateCommand())
                     {
                         cmd.CommandText = query;
                         if (parameters != null)
@@ -134,8 +134,8 @@ namespace ZenaTraumacoaching.DAL.DAL
         {
             int output = 0;
             SqlDataReader rdr;
-            connection.StartConnection();
-            SqlCommand cmd = connection.Conn.CreateCommand();
+            StartConnection();
+            SqlCommand cmd = Conn.CreateCommand();
             cmd.CommandText = "SELECT UserID FROM [User] WHERE Username = '" + username + "'";
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
@@ -144,7 +144,7 @@ namespace ZenaTraumacoaching.DAL.DAL
             }
             rdr.Close();
             cmd.Dispose();
-            connection.CloseConnection();
+            CloseConnection();
             return output;
         }
     }

@@ -70,6 +70,7 @@
     <Compile Include="Connection.cs" />
     <Compile Include="DAL\UserDAL.cs" />
     <Compile Include="DTO\UserDTO.cs" />
+    <Compile Include="Interfaces\Iuser.cs" />
     <Compile Include="Interfaces\IUserContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
