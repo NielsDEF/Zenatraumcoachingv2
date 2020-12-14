@@ -1,12 +1,12 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Linq;
 using System.Threading.Tasks;
-using System.ComponentModel.DataAnnotations;
 
 namespace ZenaTraumacoaching.Models
 {
-    public class UserModel
+    public class RegistratieViewModel
     {
         [Required]
         public string Username { get; private set; }
@@ -26,15 +26,5 @@ namespace ZenaTraumacoaching.Models
 
         [Required]
         public string Gender { get; private set; }
-
-        public UserModel(string username, string password, string firstname, string lastname, string email, string gender)
-        {
-            this.Username = username;
-            this.Password = password;
-            this.Firstname = firstname;
-            this.Lastname = lastname;
-            this.Email = email;
-            this.Gender = gender;
-        }
     }
 }

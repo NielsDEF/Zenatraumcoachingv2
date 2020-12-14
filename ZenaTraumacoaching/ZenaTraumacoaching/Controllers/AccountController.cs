@@ -41,26 +41,23 @@ namespace ZenaTraumacoaching.Controllers
         public ActionResult LoginClick(UserModel model)
         {
             UserContainer userContainer = new UserContainer(new UserDAL());
+
+
             if (userContainer.ComparePasswords(model.Username, model.Password))
             {
+                HttpContext.Session.SetInt32("UserID", userContainer.GetUserID(model.Username));
 
-                if (userContainer.ComparePasswords(model.Username, model.Password))
-                {
-                    HttpContext.Session.SetInt32("UserID", userContainer.GetUserID(model.Username));
+                ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
+                User user = userContainer.PullUserFromDatabase(Convert.ToInt32(HttpContext.Session.GetInt32("UserID")));
+                ProfileViewModel vm = new ProfileViewModel();
+                vm = profileconv.UserToViewModel(user);
+                return View("Profiel", vm);
 
-                    ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
-                    User user = userContainer.PullUserFromDatabase(Convert.ToInt32(HttpContext.Session.GetInt32("UserID")));
-                    ProfileViewModel vm = new ProfileViewModel();
-                    vm = profileconv.UserToViewModel(user);
-                    return View("Profiel", vm);
-
-                }
-                else
-                {
-                    return View("Login");
-                }
             }
-            return View("Home");
+            else
+            {
+                return View("Login");
+            }
         }
         [HttpGet]
         public IActionResult Profiel(ProfileViewModel model)
