@@ -102,3 +102,5 @@ C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.pdb
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.genruntimeconfig.cache
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Properties\launchSettings.json
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Blog.cshtml.g.cs
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Referentie.cshtml.g.cs

@@ -3,3 +3,35 @@
 *@
 @{
 }
+@*<div class="wrapper">
+    <div class="registration_form">
+        <div class="title">
+            Referentie Toevoegen
+        </div>
+
+        <form action="ReferentieToevoegenClick" method="post">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form_wrap">
+                <div class="input_wrap">
+                    <label asp-for="ReferentieTitel"></label>
+                    <input asp-for="ReferentieTitel" class="form-control" />
+                    <span asp-validation-for="ReferentieTitel" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <label asp-for="ReferentieTekst"></label>
+                    <input asp-for="ReferentieTekst" class="form-control" />
+                    <span asp-validation-for="ReferentieTekst" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <label asp-for="Cijfer"></label>
+                    <input asp-for="Cijfer" class="form-control" />
+                    <span asp-validation-for="Cijfer" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <button type="submit" class="submit_btn">Voeg Referentie Toe</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>*@

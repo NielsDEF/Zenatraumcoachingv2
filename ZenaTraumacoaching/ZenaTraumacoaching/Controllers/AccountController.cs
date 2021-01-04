@@ -19,6 +19,15 @@ namespace ZenaTraumacoaching.Controllers
         {
             return View();
         }
+        public IActionResult Referentie()
+        {
+            return View();
+        }
+        public IActionResult Blog()
+        {
+
+            return View();
+        }
         public IActionResult Login()
         {
             return View();
@@ -69,5 +78,16 @@ namespace ZenaTraumacoaching.Controllers
             vm = profileconv.UserToViewModel(user);
             return View(vm);
         }
+
+        //[HttpPost]
+        //public IActionResult ReferentieToevoegenClick(ReferentieViewModel model)
+        //{ 
+        
+        //}
+        //[HttpPost]
+        //public IActionResult BlogToevoegenClick(BlogViewModel model)
+        //{ 
+        
+        //}
     }
 }
