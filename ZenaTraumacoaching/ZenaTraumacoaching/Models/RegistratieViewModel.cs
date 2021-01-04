@@ -9,22 +9,22 @@ namespace ZenaTraumacoaching.Models
     public class RegistratieViewModel
     {
         [Required]
-        public string Username { get; private set; }
+        public string Username { get; set; }
 
         [Required(ErrorMessage = "Please insert the correct Password")]
         [DataType(DataType.Password)]
-        public string Password { get; private set; }
+        public string Password { get; set; }
 
         [Required]
-        public string Firstname { get; private set; }
+        public string Firstname { get; set; }
 
         [Required]
-        public string Lastname { get; private set; }
+        public string Lastname { get; set; }
 
         [Required]
-        public string Email { get; private set; }
+        public string Email { get; set; }
 
         [Required]
-        public string Gender { get; private set; }
+        public string Gender { get; set; }
     }
 }

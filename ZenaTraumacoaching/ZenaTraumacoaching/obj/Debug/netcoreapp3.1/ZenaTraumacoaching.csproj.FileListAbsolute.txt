@@ -80,7 +80,6 @@ C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.RazorAssemblyInfo.cs
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\staticwebassets\ZenaTraumacoaching.StaticWebAssets.Manifest.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\staticwebassets\ZenaTraumacoaching.StaticWebAssets.xml
-C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\scopedcss\bundle\ZenaTraumacoaching.styles.css
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.TagHelpers.input.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.TagHelpers.output.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.RazorCoreGenerate.cache
@@ -102,3 +101,4 @@ C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.dll
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.pdb
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.genruntimeconfig.cache
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Properties\launchSettings.json

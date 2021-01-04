@@ -581,23 +581,24 @@
   },
   "packageFolders": {
     "C:\\Users\\Niels\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
+      "projectUniqueName": "C:\\Users\\Niels\\Documents\\GitHub\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
       "projectName": "ZenaTraumacoaching",
-      "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
+      "projectPath": "C:\\Users\\Niels\\Documents\\GitHub\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
       "packagesPath": "C:\\Users\\Niels\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\obj\\",
+      "outputPath": "C:\\Users\\Niels\\Documents\\GitHub\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        "C:\\Microsoft\\Xamarin\\NuGet\\"
       ],
       "configFilePaths": [
         "C:\\Users\\Niels\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Xamarin.Offline.config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp3.1"
@@ -608,10 +609,9 @@
       },
       "frameworks": {
         "netcoreapp3.1": {
-          "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj": {
-              "projectPath": "C:\\Users\\Niels\\Documents\\Github\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj"
+            "C:\\Users\\Niels\\Documents\\GitHub\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj": {
+              "projectPath": "C:\\Users\\Niels\\Documents\\GitHub\\Zenatraumcoachingv2\\ZenaTraumacoaching\\Logic\\ZenaTraumacoaching.Logic.csproj"
             }
           }
         }
@@ -624,7 +624,6 @@
     },
     "frameworks": {
       "netcoreapp3.1": {
-        "targetAlias": "netcoreapp3.1",
         "dependencies": {
           "Dapper": {
             "target": "Package",
@@ -653,7 +652,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.403\\RuntimeIdentifierGraph.json"
       }
     }
   }

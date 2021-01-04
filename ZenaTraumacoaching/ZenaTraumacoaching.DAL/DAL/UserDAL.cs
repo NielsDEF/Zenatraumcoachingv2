@@ -40,7 +40,7 @@ namespace ZenaTraumacoaching.DAL.DAL
         {
             StartConnection();
             SqlCommand cmd = Conn.CreateCommand();
-            cmd.CommandText = "INSERT INTO [User](Username, Password, FirstName, LastName ,Email,Gender) VALUES(@Username, @Password, @FirstName, @LastName, @Email, @Gender  )";
+            cmd.CommandText = "INSERT INTO [User](Username, Password, FirstName, LastName ,Email ,Gender) VALUES(@Username, @Password, @FirstName, @LastName, @Email, @Gender)";
             cmd.Parameters.AddWithValue("@Username", user.Username);
             cmd.Parameters.AddWithValue("@Password", user.Password);
             cmd.Parameters.AddWithValue("@FirstName", user.Firstname);
@@ -66,69 +66,6 @@ namespace ZenaTraumacoaching.DAL.DAL
         private UserDTO DataTableToUser(DataTable result, int rowIndex)
         {
             return new UserDTO(result.Rows[rowIndex]["firstname"].ToString(), result.Rows[rowIndex]["lastname"].ToString(), result.Rows[rowIndex]["email"].ToString(), result.Rows[rowIndex]["gender"].ToString());
-        }
-
-
-        public int ExecuteNonQuery(string query, List<SqlParameter> parameters = null)
-        {
-            try
-            {
-                using (var cmd = Conn.CreateCommand())
-                {
-                    cmd.CommandText = query;
-                    if (parameters != null)
-                        foreach (var param in parameters)
-                        {
-                            cmd.Parameters.Add(param);
-                        }
-
-                    //connection.StartConnection();
-
-                    return Convert.ToInt32(cmd.ExecuteNonQuery());
-                }
-            }
-            catch (Exception e)
-            {
-                throw e;
-            }
-        }
-        public DataTable ExecuteSqlReader(string query, List<SqlParameter> parameters = null)
-        {
-
-            DataTable dataTable = new DataTable();
-            using (var conn = Conn)
-
-                try
-                {
-                    using (var cmd = Conn.CreateCommand())
-                    {
-                        cmd.CommandText = query;
-                        if (parameters != null)
-                        {
-                            foreach (var param in parameters)
-                            {
-                                cmd.Parameters.Add(param);
-                            }
-                        }
-
-                        //conn.Open();
-
-                        SqlDataAdapter da = new SqlDataAdapter(cmd);
-                        da.Fill(dataTable);
-                        conn.Close();
-
-                        //using (var reader = cmd.ExecuteReader())
-                        //{
-                        //    dataTable.Load(reader);
-                        //}
-                        //connection.CloseConnection();
-                    }
-                }
-                catch (Exception)
-                {
-                    throw;
-                }
-            return dataTable;
         }
         public int GetUserID(string username)
         {
