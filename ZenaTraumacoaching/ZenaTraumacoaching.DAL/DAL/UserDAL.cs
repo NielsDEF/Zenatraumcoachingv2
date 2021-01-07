@@ -53,6 +53,7 @@ namespace ZenaTraumacoaching.DAL.DAL
 
         public UserDTO PullUserFromDatabase(int userid)
         {
+            StartConnection();
             var result = ExecuteSqlReader("SELECT Firstname, LastName, Gender, Email FROM [User] WHERE UserID = @ID", new List<SqlParameter>()
             {
                 new SqlParameter("@ID", userid),

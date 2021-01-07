@@ -23,7 +23,6 @@ namespace ZenaTraumacoaching.DAL
         {
             try
             {
-                Console.WriteLine("startconnection");
                 conn = new SqlConnection(connectionstring);
 
                 conn.Open();
