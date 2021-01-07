@@ -1,9 +1,8 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
-}
-@*<div class="wrapper">
+﻿@model BlogViewModel
+@{ ViewData["Title"] = "Blog";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<div class="wrapper">
     <div class="registration_form">
         <div class="title">
             Blogpost toevoegen
@@ -29,4 +28,4 @@
             </div>
         </form>
     </div>
-</div>*@
+</div>
