@@ -1,0 +1,30 @@
+﻿@model BlogpaginaViewModel
+@{ ViewData["Title"] = "BlogPagina";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+
+<h1>De Zenacoaching Blog</h1>
+
+<button type="button" onclick="location.href='@Url.Action("blog","Zena")'">Toevoegen</button>
+@foreach (var blog in Model.blog)
+{
+<table class="table-fill">
+    <tbody class="table-hover">
+        <tr>
+            <td class="text-left">
+                Blogtitel
+            </td>
+            <td class="text-left">
+                <label>@blog.BlogTitel</label>
+            </td>
+        </tr>
+        <tr>
+            <td class="text-left">
+                Blogtekst
+            </td>
+            <td class="text-left">
+                <label>@blog.BlogTekst</label>
+            </td>
+        </tr>
+    </tbody>
+</table>
+}

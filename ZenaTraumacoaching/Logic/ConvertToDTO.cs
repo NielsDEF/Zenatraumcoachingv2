@@ -16,5 +16,11 @@ namespace Logic
             UserDTO userDTO = new UserDTO(user.Username, user.Password, user.Firstname, user.Lastname, user.Emailadress, user.Gender);
             return userDTO;
         }
+
+        public BlogDTO ConvertBlogToDTO(Blog blog)
+        {
+            BlogDTO blogDTO = new BlogDTO(blog.BlogTitel, blog.BlogTekst);
+            return blogDTO;
+        }
     }
 }

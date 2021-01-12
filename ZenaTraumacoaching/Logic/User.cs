@@ -27,9 +27,6 @@ namespace Logic
         private string gender;
         public string Gender { get => gender; }
 
-        IUser userDAL;
-
-
         public User(string username, string password, string firstname, string lastname, string email, string gender)
 
         {
@@ -41,14 +38,11 @@ namespace Logic
             this.gender = gender;
 
         }
-        public void SetDal(IUser dal)
-        {
-            userDAL = dal;
-        }
-        public void AddUserToDataBase(User user)
+
+        public void AddUserToDataBase(IUser UserDAL)
         {
             ConvertToDTO converter = new ConvertToDTO();
-            userDAL.AddUserToDatabase(converter.ConvertUserToDTO(user));
+            UserDAL.AddUserToDatabase(converter.ConvertUserToDTO(this));
         }
     }
 }

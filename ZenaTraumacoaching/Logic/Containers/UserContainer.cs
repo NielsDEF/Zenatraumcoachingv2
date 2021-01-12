@@ -39,11 +39,6 @@ namespace Logic.Containers
             User USER = new User(user.Username, user.Password, user.Firstname, user.Lastname, user.Emailadress, user.Gender);
             return USER;
         }
-        public void AddUserToDataBase(User user)
-        {
-            ConvertToDTO converter = new ConvertToDTO();
-            userDAL.AddUserToDatabase(converter.ConvertUserToDTO(user));
-        }
 
         public int GetUserID(string username)
         {

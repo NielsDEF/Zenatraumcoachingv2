@@ -19,22 +19,12 @@ namespace ZenaTraumacoaching.Controllers
         {
             return View();
         }
-        public IActionResult Referentie()
-        {
-            return View();
-        }
-        public IActionResult Blog()
-        {
-
-            return View();
-        }
         public IActionResult Login()
         {
             return View();
         }
         public IActionResult Registratie()
         {
-
             return View();
         }
         [HttpPost]
@@ -42,8 +32,7 @@ namespace ZenaTraumacoaching.Controllers
         {
             ConvertUserModel converter = new ConvertUserModel();
             User user = converter.ConvertModelToUser(model);
-            user.SetDal(new UserDAL());
-            user.AddUserToDataBase(converter.ConvertModelToUser(model));
+            user.AddUserToDataBase(new UserDAL());
             return View("Login");
         }
         [HttpPost]
@@ -78,16 +67,5 @@ namespace ZenaTraumacoaching.Controllers
             vm = profileconv.UserToViewModel(user);
             return View(vm);
         }
-
-        //[HttpPost]
-        //public IActionResult ReferentieToevoegenClick(ReferentieViewModel model)
-        //{ 
-        
-        //}
-        //[HttpPost]
-        //public IActionResult BlogToevoegenClick(BlogViewModel model)
-        //{ 
-        
-        //}
     }
 }
