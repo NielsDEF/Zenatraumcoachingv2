@@ -38,16 +38,26 @@ namespace ZenaTraumacoaching.DAL.DAL
             while (rdr.Read())
             {
                 blog.Add(new BlogDTO(
+                    (int)rdr["BlogID"],
                     (string)rdr["BlogTitel"],
                     (string)rdr["BlogTekst"]
                     )
                 );
-
             }
             rdr.Close();
             cmd.Dispose();
             CloseConnection();
             return blog;
+        }
+
+        public void DeleteBlogFromDatabase(int id)
+        {
+            StartConnection();
+            SqlCommand cmd = Conn.CreateCommand();
+            cmd.CommandText = "DELETE FROM [BLOG] WHERE BlogID = @BlogID";
+            cmd.Parameters.AddWithValue("@BlogID", id);
+            cmd.ExecuteNonQuery();
+            CloseConnection();
         }
     }
 }

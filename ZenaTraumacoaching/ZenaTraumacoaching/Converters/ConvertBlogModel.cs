@@ -11,7 +11,7 @@ namespace ZenaTraumacoaching.Converters
     {
         public Blog ConvertModelToBlogPost(BlogViewModel model)
         {
-            Blog blog = new Blog(model.BlogTitel, model.BlogTekst);
+            Blog blog = new Blog(model.BlogID,model.BlogTitel, model.BlogTekst);
 
             return blog;
         }

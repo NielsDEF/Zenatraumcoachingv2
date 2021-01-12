@@ -8,6 +8,7 @@ namespace ZenaTraumacoaching.Models
 {
     public class BlogViewModel
     {
+        public int BlogID { get; set; }
         [Required]
         public string BlogTitel { get; set; }
         [Required]

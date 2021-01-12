@@ -10,20 +10,25 @@ namespace Logic
 {
    public class Blog
     {
+        private int blogid;
+        public int BlogID { get => blogid; }
+
         private string blogtitel;
         public string BlogTitel { get => blogtitel; }
 
         private string blogtekst;
         public string BlogTekst { get => blogtekst; }
 
-        public Blog(string blogtitel, string blogtekst)
+        public Blog(int blogid, string blogtitel, string blogtekst)
         {
+            this.blogid = blogid;
             this.blogtitel = blogtitel;
             this.blogtekst = blogtekst;
         }
 
         public Blog(BlogDTO blog)
         {
+            this.blogid = blog.BlogID;
             this.blogtitel = blog.BlogTitel;
             this.blogtekst = blog.BlogTekst;
         }
@@ -34,10 +39,9 @@ namespace Logic
             BlogDAL.AddBlogToDatabase(converter.ConvertBlogToDTO(this));
         }
 
-        //public void GetAllBlogposts(IBlogContainer BlogDAL)
-        //{
-        //    ConvertToDTO converter = new ConvertToDTO();
-        //    BlogDAL.GetAllBlogposts(converter.ConvertBlogToDTO(this));
-        //}
+        public void DeleteBlogFromDatabase(IBlog BlogDAL,int id)
+        {
+            BlogDAL.DeleteBlogFromDatabase(id);
+        }
     }
 }

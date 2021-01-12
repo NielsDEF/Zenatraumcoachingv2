@@ -35,7 +35,7 @@ namespace ZenaTraumacoaching.Controllers
             ConvertBlogModel converter = new ConvertBlogModel();
             Blog blog = converter.ConvertModelToBlogPost(model);
             blog.AddBlogToDatabase(new BlogDAL());
-            return View("Blog");
+            return View("Blogpagina");
         }
 
         public IActionResult Blogpagina()
@@ -53,15 +53,43 @@ namespace ZenaTraumacoaching.Controllers
             return View(model);
         }
 
-        //[HttpPost]
-        //public ActionResult ReferentieToevoegenClick(ReferentieViewModel model)
-        //{
-        //    ConvertUserModel converter = new ConvertUserModel();
-        //    User user = converter.ConvertModelToUser(model);
-        //    user.SetDal(new UserDAL());
-        //    user.AddUserToDataBase(converter.(model));
-        //    return View("Login");
-        //}
+        public ActionResult BlogDeleteClick(BlogViewModel model)
+        {
+            ConvertBlogModel converter = new ConvertBlogModel();
+            Blog blog = converter.ConvertModelToBlogPost(model);
+            blog.DeleteBlogFromDatabase(new BlogDAL() , blog.BlogID);
+            return View("Blog");
+        }
+        [HttpPost]
+        public ActionResult ReferentieToevoegenClick(ReferentieViewModel model)
+        {
+            ConvertReferentieModel converter = new ConvertReferentieModel();
+            Referentie referentie = converter.ConvertModelToReferentie(model);
+            referentie.AddReferentieToDatabase(new ReferentieDAL());
+            return View("Referentiepagina");
+        }
 
+        public IActionResult ReferentiePagina()
+        {
+            ReferentieContainer container = new ReferentieContainer(new ReferentieDAL());
+
+            List<Referentie> referenties = container.GetAllReferenties();
+            ReferentieToModel converter = new ReferentieToModel();
+            ReferentiepaginaViewModel model = new ReferentiepaginaViewModel();
+            model.referentie = new List<ReferentieViewModel>();
+            foreach (var referentie in referenties)
+            {
+                model.referentie.Add(converter.ConvertReferentieToModel(referentie));
+            }
+            return View(model);
+        }
+
+        public ActionResult ReferentieDeleteClick(ReferentieViewModel model)
+        {
+            ConvertReferentieModel converter = new ConvertReferentieModel();
+            Referentie referentie = converter.ConvertModelToReferentie(model);
+            referentie.DeleteReferentieFromDatabase(new ReferentieDAL(), referentie.ReferentieID);
+            return View("Referentie");
+        }
     }
 }

@@ -12,6 +12,7 @@ namespace ZenaTraumacoaching.Converters
         public BlogViewModel ConvertBlogToModel(Blog blog)
         {
             BlogViewModel blogViewModel = new BlogViewModel();
+            blogViewModel.BlogID = blog.BlogID;
             blogViewModel.BlogTitel = blog.BlogTitel;
             blogViewModel.BlogTekst = blog.BlogTekst;
 

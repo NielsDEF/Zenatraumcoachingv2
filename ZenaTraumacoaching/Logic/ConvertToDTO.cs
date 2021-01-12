@@ -22,5 +22,11 @@ namespace Logic
             BlogDTO blogDTO = new BlogDTO(blog.BlogTitel, blog.BlogTekst);
             return blogDTO;
         }
+
+        public ReferentieDTO ConvertReferentieToDTO(Referentie referentie)
+        {
+            ReferentieDTO referentieDTO = new ReferentieDTO(referentie.ReferentieCijfer, referentie.ReferentieTekst);
+            return referentieDTO;
+        }
     }
 }

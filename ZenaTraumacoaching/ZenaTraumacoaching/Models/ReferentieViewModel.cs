@@ -8,9 +8,8 @@ namespace ZenaTraumacoaching.Models
     public class ReferentieViewModel
     {
         public int ReferentieID { get; set; }
-        public string ReferentieTitel { get; set; }
+        public string ReferentieCijfer { get; set; }
         public string ReferentieTekst { get; set; }
-        public int Cijfer { get; set; }
 
     }
 }

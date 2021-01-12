@@ -7,9 +7,8 @@ using ZenaTraumacoaching.DAL.DTO;
 
 namespace ZenaTraumacoaching.DAL.Interfaces
 {
-    public interface IBlog
+    public interface IReferentieContainer
     {
-      void AddBlogToDatabase(BlogDTO blog);
-      void DeleteBlogFromDatabase(int id);
+        List<ReferentieDTO> GetAllReferenties();
     }
 }
