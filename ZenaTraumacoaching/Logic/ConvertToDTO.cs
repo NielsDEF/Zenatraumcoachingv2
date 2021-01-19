@@ -19,13 +19,13 @@ namespace Logic
 
         public BlogDTO ConvertBlogToDTO(Blog blog)
         {
-            BlogDTO blogDTO = new BlogDTO(blog.BlogTitel, blog.BlogTekst);
+            BlogDTO blogDTO = new BlogDTO(blog.BlogID,blog.BlogTitel, blog.BlogTekst);
             return blogDTO;
         }
 
         public ReferentieDTO ConvertReferentieToDTO(Referentie referentie)
         {
-            ReferentieDTO referentieDTO = new ReferentieDTO(referentie.ReferentieCijfer, referentie.ReferentieTekst);
+            ReferentieDTO referentieDTO = new ReferentieDTO(referentie.ReferentieID,referentie.ReferentieCijfer, referentie.ReferentieTekst);
             return referentieDTO;
         }
     }

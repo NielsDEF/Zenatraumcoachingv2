@@ -26,5 +26,13 @@ namespace Logic.Containers
             }
             return referenties;
         }
+        public void DeleteReferentieFromDatabase(int referentiepostid)
+        {
+            referentieDAL.DeleteReferentieFromDatabase(referentiepostid);
+        }
+        public Referentie GetReferentie(int referentiepostid)
+        {
+            return new Referentie(referentieDAL.GetReferentie(referentiepostid));
+        }
     }
 }

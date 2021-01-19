@@ -35,9 +35,9 @@ namespace Logic.Containers
 
         public User PullUserFromDatabase(int userid)
         {
-            UserDTO user = userDAL.PullUserFromDatabase(userid);
-            User USER = new User(user.Username, user.Password, user.Firstname, user.Lastname, user.Emailadress, user.Gender);
-            return USER;
+            UserDTO userDTO = userDAL.PullUserFromDatabase(userid);
+            User user = new User(userDTO);
+            return user;
         }
 
         public int GetUserID(string username)

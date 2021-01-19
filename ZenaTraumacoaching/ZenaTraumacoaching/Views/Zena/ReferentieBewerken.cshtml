@@ -1,0 +1,31 @@
+﻿@model ReferentieViewModel
+@{ ViewData["Title"] = "Referentie";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+<div class="wrapper">
+    <div class="registration_form">
+        <div class="title">
+            Referentie Bewerken
+        </div>
+
+        <form asp-action="ReferentieUpdateClick" asp-controller="Zena" method="post">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form_wrap">
+                <input hidden asp-for="ReferentieID" />
+                <div class="input_wrap">
+                    <label asp-for="ReferentieCijfer"></label>
+                    <input asp-for="ReferentieCijfer" class="form-control" max="10" min="0"/>
+                    <span asp-validation-for="ReferentieCijfer" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <label asp-for="ReferentieTekst"></label>
+                    <input asp-for="ReferentieTekst" class="form-control" />
+                    <span asp-validation-for="ReferentieTekst" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <button type="submit" class="submit_btn">Bewerken</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

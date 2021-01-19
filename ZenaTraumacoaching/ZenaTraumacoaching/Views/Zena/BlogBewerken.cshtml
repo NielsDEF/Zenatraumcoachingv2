@@ -1,0 +1,30 @@
+﻿@model BlogViewModel
+@{ ViewData["Title"] = "Referentie";
+    Layout = "~/Views/Shared/_Layout.cshtml"; }
+<div class="wrapper">
+    <div class="registration_form">
+        <div class="title">
+            Blogpost Bewerken
+        </div>
+
+        <form asp-action="BlogUpdateClick" asp-controller="Zena" method="post">
+
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form_wrap">
+                <div class="input_wrap">
+                    <label asp-for="BlogTitel"></label>
+                    <input asp-for="BlogTitel" class="form-control" />
+                    <span asp-validation-for="BlogTitel" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <label asp-for="BlogTekst"></label>
+                    <input asp-for="BlogTekst" class="form-control" />
+                    <span asp-validation-for="BlogTekst" class="text-danger"></span>
+                </div>
+                <div class="input_wrap">
+                    <button type="submit" class="submit_btn">Bewerken</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

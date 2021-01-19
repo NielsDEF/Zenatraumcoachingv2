@@ -13,6 +13,5 @@ namespace ZenaTraumacoaching.DAL.Interfaces
         void AddUserToDatabase(UserDTO user);
         int GetUserID(string username);
         UserDTO PullUserFromDatabase(int userid);
-
     }
 }

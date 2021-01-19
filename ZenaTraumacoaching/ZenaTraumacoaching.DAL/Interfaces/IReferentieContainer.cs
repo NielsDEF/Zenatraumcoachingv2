@@ -10,5 +10,9 @@ namespace ZenaTraumacoaching.DAL.Interfaces
     public interface IReferentieContainer
     {
         List<ReferentieDTO> GetAllReferenties();
+        void AddReferentieToDatabase(ReferentieDTO referentie);
+        void DeleteReferentieFromDatabase(int referentiepostid);
+        void ReferentieUpdate(ReferentieDTO referentie);
+        ReferentieDTO GetReferentie(int referentiepostid);
     }
 }

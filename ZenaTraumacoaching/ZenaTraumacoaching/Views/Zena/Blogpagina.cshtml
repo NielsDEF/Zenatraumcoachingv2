@@ -25,10 +25,10 @@
                     <label>@blog.BlogTekst</label>
                 </td>
                 <td class="text-left">
-                    <form action="BlogDeleteClick" method="post">
-                    <input type="hidden" name="BlogID" value="@blog.BlogID" />
-                    <button type="submit" class="submit_btn">Delete</button>
-                    </form>
+                    <a href="/Zena/BlogPostDeleteClick/@blog.BlogID">Delete</a>
+                </td>
+                <td class="text-left">
+                    <a href="/Zena/BlogBewerken/@blog.BlogID">Update</a>
                 </td>
             </tr>
         </tbody>

@@ -10,7 +10,7 @@ using System.Data;
 
 namespace ZenaTraumacoaching.DAL.DAL
 {
-    public class UserDAL : Connection, IUserContainer, IUser
+    public class UserDAL : Connection, IUserContainer
     {
 
         public UserDAL()
@@ -53,14 +53,11 @@ namespace ZenaTraumacoaching.DAL.DAL
 
         public UserDTO PullUserFromDatabase(int userid)
         {
-            StartConnection();
-            var result = ExecuteSqlReader("SELECT Firstname, LastName, Gender, Email FROM [User] WHERE UserID = @ID", new List<SqlParameter>()
+            var result = ExecuteSqlReader("SELECT Firstname, LastName, Email, Gender FROM [User] WHERE UserID = @ID", new List<SqlParameter>()
             {
                 new SqlParameter("@ID", userid),
-
             });
             UserDTO user = DataTableToUser(result, 0);
-
             return user;
         }
 

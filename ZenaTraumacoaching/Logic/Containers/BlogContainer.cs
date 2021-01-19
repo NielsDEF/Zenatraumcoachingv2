@@ -26,5 +26,14 @@ namespace Logic.Containers
             }
             return blogs;
         }
+
+        public void DeleteBlogFromDatabase(int blogpostid)
+        {
+            blogDAL.DeleteBlogFromDatabase(blogpostid);
+        }
+        public Blog GetBlogPost(int blogpostid)
+        {
+            return new Blog(blogDAL.GetBlogPost(blogpostid));
+        }
     }
 }

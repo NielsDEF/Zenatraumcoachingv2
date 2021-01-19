@@ -10,6 +10,10 @@ namespace ZenaTraumacoaching.DAL.Interfaces
 {
     public interface IBlogContainer
     {
+        void AddBlogToDatabase(BlogDTO blog);
         List<BlogDTO> GetAllBlogposts();
+        void DeleteBlogFromDatabase(int blogpostid);
+        void BlogPostUpdate(BlogDTO blog);
+        BlogDTO GetBlogPost(int blogpostid);
     }
 }

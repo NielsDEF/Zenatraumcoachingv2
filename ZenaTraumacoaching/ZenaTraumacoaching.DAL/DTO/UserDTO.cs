@@ -8,6 +8,11 @@ namespace ZenaTraumacoaching.DAL.DTO
 {
     public class UserDTO
     {
+        private int userid;
+        public int Userid 
+        { 
+            get { return userid; }
+        }
         private string username;
 
         public string Username
@@ -45,11 +50,20 @@ namespace ZenaTraumacoaching.DAL.DTO
         {
             get { return gender; }
         }
-
+        //Registratie//
         public UserDTO(string username, string password, string firstname, string lastname, string email, string gender)
         {
             this.username = username;
             this.password = password;
+            this.firstname = firstname;
+            this.lastname = lastname;
+            this.emailadress = email;
+            this.gender = gender;
+        }
+        //Profiel invullen//
+        public UserDTO(int userid,string firstname, string lastname, string email, string gender)
+        {
+            this.userid = userid;
             this.firstname = firstname;
             this.lastname = lastname;
             this.emailadress = email;

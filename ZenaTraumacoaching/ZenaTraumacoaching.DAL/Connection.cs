@@ -66,7 +66,7 @@ namespace ZenaTraumacoaching.DAL
 
         public DataTable ExecuteSqlReader(string query, List<SqlParameter> parameters = null)
         {
-
+            StartConnection();
             DataTable dataTable = new DataTable();
             using (var conn = Conn)
 
@@ -91,6 +91,7 @@ namespace ZenaTraumacoaching.DAL
                 {
                     throw;
                 }
+            CloseConnection();
             return dataTable;
         }
     }

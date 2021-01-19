@@ -25,10 +25,10 @@
                     <label>@referentie.ReferentieTekst</label>
                 </td>
                 <td class="text-left">
-                    <form action="BlogDeleteClick" method="post">
-                        <input type="hidden" name="BlogID" value="@referentie.ReferentieID" />
-                        <button type="submit" class="submit_btn">Delete</button>
-                    </form>
+                    <a href="/Zena/ReferentieDeleteClick/@referentie.ReferentieID">Delete</a>
+                </td>
+                <td class="text-left">
+                    <a href="/Zena/ReferentieBewerken/@referentie.ReferentieID">Update</a>
                 </td>
             </tr>
         </tbody>

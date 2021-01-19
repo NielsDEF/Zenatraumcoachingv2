@@ -58,7 +58,7 @@ namespace ZenaTraumacoaching.Controllers
             }
         }
         [HttpGet]
-        public IActionResult Profiel(ProfileViewModel model)
+        public IActionResult Profiel()
         {
             ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
             UserContainer userContainer = new UserContainer(new UserDAL());

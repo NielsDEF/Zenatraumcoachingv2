@@ -2,80 +2,27 @@
 
 @{ ViewData["Title"] = "Profiel";
     Layout = "~/Views/Shared/_Layout.cshtml"; }
-<!DOCTYPE html>
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js%22%3E"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-
-<body>
-    <h3>Accountgegevens</h3>
-    <div class="row mb-3">
-        <div class="col-4">
-            <div class="container" id="AccountGegevens">
-                <div class="row">
-                    <div class="col-2">
-                        <label>@Model.Firstname @Model.Lastname</label>
-                    </div>
-                    <div class="col-2">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <label>@Model.Email</label>
-                    </div>
-                    <div class="col-2">
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-2">
-                        <label>@Model.Gender</label>
-                    </div>
-                    <div class="col-2">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <table class="buttons">
+<table class="table-fill">
+    <thead>
         <tr>
-            <td><button type="button">Hoofdmenu</button>
-            <td><button type="button">Button</button>
-            <td><button type="button">Button</button>
-    </table>
-</body>
-
-<style>
-    label {
-        display: block;
-        padding-left: 15px;
-        text-indent: -15px;
-    }
-
-    input {
-        width: 13px;
-        height: 16px;
-        padding: 0;
-        margin: 0;
-        vertical-align: bottom;
-        position: relative;
-        top: -1px;
-        *overflow: hidden;
-    }
-
-
-
-    .buttons {
-        display: block;
-        position: absolute;
-        top: 80px;
-        right: 100px;
-        width: 60%;
-        table-layout: fixed;
-        border-collapse: collapse;
-    }
-
-        .buttons button {
-            width: 100%;
-        }
-</style>
+            <th class="text-left">Accountgegevens</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody class="table-hover">
+        <tr>
+            <td>Naam</td>
+            <td class="text-left">@Model.Firstname @Model.Lastname</td>
+        </tr>
+        <tr>
+            <td>Email</td>
+            <td class="text-left">@Model.Email</td>
+        </tr>
+        <tr>
+            <td>Geslacht</td>
+            <td class="text-left">@Model.Gender</td>
+        </tr>
+    </tbody>
+</table>
 

@@ -13,13 +13,13 @@ namespace Logic
         private int referentieid;
         public int ReferentieID { get => referentieid; }
 
-        private string referentiecijfer;
-        public string ReferentieCijfer { get => referentiecijfer; }
+        private int referentiecijfer;
+        public int ReferentieCijfer { get => referentiecijfer; }
 
         private string referentietekst;
         public string ReferentieTekst { get => referentietekst; }
 
-        public Referentie(int referentieid, string referentiecijfer, string referentietekst)
+        public Referentie(int referentieid, int referentiecijfer, string referentietekst)
         {
             this.referentieid = referentieid;
             this.referentiecijfer = referentiecijfer;
@@ -33,15 +33,16 @@ namespace Logic
             this.referentietekst = referentie.ReferentieTekst;
         }
 
-        public void AddReferentieToDatabase(IReferentie ReferentieDAL)
+        public void AddReferentieToDatabase(IReferentieContainer ReferentieDAL)
         {
             ConvertToDTO converter = new ConvertToDTO();
             ReferentieDAL.AddReferentieToDatabase(converter.ConvertReferentieToDTO(this));
         }
 
-        public void DeleteReferentieFromDatabase(IReferentie ReferentieDAL, int id)
+        public void ReferentieUpdate(IReferentieContainer ReferentieDAL)
         {
-            ReferentieDAL.DeleteReferentieFromDatabase(id);
+            ConvertToDTO converter = new ConvertToDTO();
+            ReferentieDAL.ReferentieUpdate(converter.ConvertReferentieToDTO(this));
         }
     }
 }

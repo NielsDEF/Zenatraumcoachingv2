@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using ZenaTraumacoaching.DAL.Interfaces;
+using ZenaTraumacoaching.DAL.DTO;
 
 namespace Logic
 {
@@ -39,7 +40,16 @@ namespace Logic
 
         }
 
-        public void AddUserToDataBase(IUser UserDAL)
+        public User(UserDTO user)
+        {
+            this.username = user.Username;
+            this.firstname = user.Firstname;
+            this.lastname = user.Lastname;
+            this.emailadress = user.Emailadress;
+            this.gender = user.Gender;
+        }
+
+            public void AddUserToDataBase(IUserContainer UserDAL)
         {
             ConvertToDTO converter = new ConvertToDTO();
             UserDAL.AddUserToDatabase(converter.ConvertUserToDTO(this));

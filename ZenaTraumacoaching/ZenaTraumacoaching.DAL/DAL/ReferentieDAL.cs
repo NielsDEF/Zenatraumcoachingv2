@@ -6,10 +6,11 @@ using ZenaTraumacoaching.DAL.Interfaces;
 using ZenaTraumacoaching.DAL.DTO;
 using System.Data;
 using System.Collections.Generic;
+using System;
 
 namespace ZenaTraumacoaching.DAL.DAL
 {
-    public class ReferentieDAL : Connection, IReferentieContainer, IReferentie
+    public class ReferentieDAL : Connection, IReferentieContainer
     {
         public ReferentieDAL()
         {
@@ -28,7 +29,7 @@ namespace ZenaTraumacoaching.DAL.DAL
 
         public List<ReferentieDTO> GetAllReferenties()
         {
-            List<ReferentieDTO> blog = new List<ReferentieDTO>();
+            List<ReferentieDTO> referentie = new List<ReferentieDTO>();
             SqlDataReader rdr;
             StartConnection();
             SqlCommand cmd = Conn.CreateCommand();
@@ -36,9 +37,9 @@ namespace ZenaTraumacoaching.DAL.DAL
             rdr = cmd.ExecuteReader();
             while (rdr.Read())
             {
-                blog.Add(new ReferentieDTO(
+                referentie.Add(new ReferentieDTO(
                     (int)rdr["ReferentieID"],
-                    (string)rdr["ReferentieCijfer"],
+                    (int)(rdr["ReferentieCijfer"]),
                     (string)rdr["ReferentieTekst"]
                     )
                 );
@@ -46,17 +47,48 @@ namespace ZenaTraumacoaching.DAL.DAL
             rdr.Close();
             cmd.Dispose();
             CloseConnection();
-            return blog;
+            return referentie;
         }
 
-        public void DeleteReferentieFromDatabase(int id)
+        public void DeleteReferentieFromDatabase(int referentiepostid)
         {
             StartConnection();
             SqlCommand cmd = Conn.CreateCommand();
             cmd.CommandText = "DELETE FROM [Referenties] WHERE ReferentieID = @ReferentieID";
-            cmd.Parameters.AddWithValue("@BlogID", id);
+            cmd.Parameters.AddWithValue("@ReferentieID", referentiepostid);
             cmd.ExecuteNonQuery();
             CloseConnection();
+        }
+        public void ReferentieUpdate(ReferentieDTO referentie)
+        {
+            StartConnection();
+            SqlCommand cmd = Conn.CreateCommand();
+            cmd.CommandText = "UPDATE [Referenties] SET ReferentieCijfer=@ReferentieCijfer, ReferentieTekst=@ReferentieTekst WHERE ReferentieID = @ReferentieID";
+            cmd.Parameters.AddWithValue("@ReferentieID", referentie.ReferentieID);
+            cmd.Parameters.AddWithValue("@ReferentieCijfer", referentie.ReferentieCijfer);
+            cmd.Parameters.AddWithValue("@ReferentieTekst", referentie.ReferentieTekst);
+            cmd.ExecuteNonQuery();
+            CloseConnection();
+        }
+        public ReferentieDTO GetReferentie(int referentiepostid)
+        {
+            int referentiecijfer = 0;
+            string referentietekst = null;
+            SqlDataReader rdr;
+            StartConnection();
+            SqlCommand cmd = Conn.CreateCommand();
+            cmd.CommandText = "SELECT ReferentieCijfer, ReferentieTekst FROM [Referenties] WHERE ReferentieID = @ReferentieID";
+            cmd.Parameters.AddWithValue("@ReferentieID", referentiepostid);
+            rdr = cmd.ExecuteReader();
+            while (rdr.Read())
+            {
+                referentiecijfer = (int)rdr["ReferentieCijfer"];
+                referentietekst = (string)rdr["ReferentieTekst"];
+            }
+            rdr.Close();
+            cmd.Dispose();
+            CloseConnection();
+            return new ReferentieDTO(referentiepostid, referentiecijfer, referentietekst);
         }
     }
 }

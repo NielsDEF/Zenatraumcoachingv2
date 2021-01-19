@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using ZenaTraumacoaching.DAL.Interfaces;
 using ZenaTraumacoaching.DAL.DTO;
+using ZenaTraumacoaching.DAL.DAL;
 
 namespace Logic
 {
@@ -33,15 +34,15 @@ namespace Logic
             this.blogtekst = blog.BlogTekst;
         }
 
-        public void AddBlogToDatabase(IBlog BlogDAL)
+        public void AddBlogToDatabase(IBlogContainer BlogDAL)
         {
             ConvertToDTO converter = new ConvertToDTO();
             BlogDAL.AddBlogToDatabase(converter.ConvertBlogToDTO(this));
         }
-
-        public void DeleteBlogFromDatabase(IBlog BlogDAL,int id)
+        public void BlogPostUpdate(IBlogContainer BlogDAL)
         {
-            BlogDAL.DeleteBlogFromDatabase(id);
+            ConvertToDTO converter = new ConvertToDTO();
+            BlogDAL.BlogPostUpdate(converter.ConvertBlogToDTO(this));
         }
     }
 }

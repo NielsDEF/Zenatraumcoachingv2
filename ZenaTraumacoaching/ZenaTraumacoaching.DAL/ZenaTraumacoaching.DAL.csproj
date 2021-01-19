@@ -74,11 +74,8 @@
     <Compile Include="DTO\BlogDTO.cs" />
     <Compile Include="DTO\ReferentieDTO.cs" />
     <Compile Include="DTO\UserDTO.cs" />
-    <Compile Include="Interfaces\IBlog.cs" />
     <Compile Include="Interfaces\IBlogContainer.cs" />
-    <Compile Include="Interfaces\IReferentie.cs" />
     <Compile Include="Interfaces\IReferentieContainer.cs" />
-    <Compile Include="Interfaces\Iuser.cs" />
     <Compile Include="Interfaces\IUserContainer.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

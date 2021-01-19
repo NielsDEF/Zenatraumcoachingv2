@@ -14,9 +14,9 @@ namespace ZenaTraumacoaching.DAL.DTO
             get { return referentieid; }
         }
 
-        private string referentiecijfer;
+        private int referentiecijfer;
 
-        public string ReferentieCijfer
+        public int ReferentieCijfer
         {
             get { return referentiecijfer; }
         }
@@ -27,13 +27,13 @@ namespace ZenaTraumacoaching.DAL.DTO
             get { return referentietekst; }
         }
 
-        public ReferentieDTO(string referentiecijfer, string referentietekst)
+        public ReferentieDTO(int referentiecijfer, string referentietekst)
         {
             this.referentiecijfer = referentiecijfer;
             this.referentietekst = referentietekst;
         }
 
-        public ReferentieDTO(int referentieid, string referentiecijfer, string referentietekst)
+        public ReferentieDTO(int referentieid, int referentiecijfer, string referentietekst)
         {
             this.referentieid = referentieid;
             this.referentiecijfer = referentiecijfer;
