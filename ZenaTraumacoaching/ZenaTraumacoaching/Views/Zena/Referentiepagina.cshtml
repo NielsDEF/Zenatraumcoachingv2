@@ -13,21 +13,21 @@
     <table class="table-fill">
         <thead>
             <tr>
-                <th class="text-left">
-                    @referentie.ReferentieCijfer
-                </th>
+                <th>Cijfer</th>
+                <th>Beschrijving</th>
                 <th></th>
             </tr>
         </thead>
         <tbody class="table-hover">
             <tr>
                 <td class="text-left">
-                    <label>@referentie.ReferentieTekst</label>
+                    @referentie.ReferentieCijfer/10
+                </td>
+                <td class="text-left">
+                    @referentie.ReferentieTekst
                 </td>
                 <td class="text-left">
                     <a href="/Zena/ReferentieDeleteClick/@referentie.ReferentieID">Delete</a>
-                </td>
-                <td class="text-left">
                     <a href="/Zena/ReferentieBewerken/@referentie.ReferentieID">Update</a>
                 </td>
             </tr>

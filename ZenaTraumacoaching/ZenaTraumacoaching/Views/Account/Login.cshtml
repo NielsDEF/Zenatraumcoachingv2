@@ -25,13 +25,23 @@
                     <span asp-validation-for="Password" class="text-danger"></span>
                 </div>
                 <div class="input_wrap">
-                    <button type="submit" class="submit_btn">Log in</button>
+                    <button type="submit" onclick="CheckNullOrEmpty()" class="submit_btn">Log in</button>
                 </div>
             </div>
         </form>
     </div>
 </div>
-
+<script>
+    function CheckNullOrEmpty() {
+        var usernameText = document.getElementById("Username").value;
+        var wachtwoordText = document.getElementById("Password").value;
+        var usernameLength = usernameText.length;
+        var wachtwoordLength = wachtwoordText.length;
+        if (usernameLength == 0 || wachtwoordLength == 0) {
+            alert("Wachtwoord en Gebruikersnaam moeten ingevuld worden!");
+        }
+    }
+</script>
 @section Scripts {
     @await Html.PartialAsync("_ValidationScriptsPartial")
 }

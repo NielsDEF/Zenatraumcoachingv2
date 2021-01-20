@@ -1,0 +1,30 @@
+﻿@model ReferentiepaginaViewModel
+@{ ViewData["Title"] = "ReferentiePagina";
+    Layout = "~/Views/Shared/_LayoutNonUser.cshtml"; }
+<head>
+    <link rel="stylesheet" media="screen" href="~/css/Blogpaginastyle.css" />
+</head>
+<h1>De Zenacoaching Referenties</h1>
+
+@foreach (var referentie in Model.referentie)
+{
+
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th>Cijfer</th>
+                <th>Beschrijving</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            <tr>
+                <td class="text-left">
+                    @referentie.ReferentieCijfer/10
+                </td>
+                <td class="text-left">
+                    @referentie.ReferentieTekst
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}

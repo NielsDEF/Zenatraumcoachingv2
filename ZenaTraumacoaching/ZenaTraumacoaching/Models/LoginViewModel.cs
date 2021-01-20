@@ -10,7 +10,8 @@ namespace ZenaTraumacoaching.Models
     {
         [Required]
         public string Username { get; set; }
-        [Required]
+        [Required(ErrorMessage = "Please insert the correct Password")]
+        [DataType(DataType.Password)]
         public string Password { get; set; }
     }
 }

@@ -60,12 +60,14 @@ namespace ZenaTraumacoaching.Controllers
         [HttpGet]
         public IActionResult Profiel()
         {
-            ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
-            UserContainer userContainer = new UserContainer(new UserDAL());
-            User user = userContainer.PullUserFromDatabase(Convert.ToInt32(HttpContext.Session.GetInt32("UserID")));
-            ProfileViewModel vm = new ProfileViewModel();
-            vm = profileconv.UserToViewModel(user);
-            return View(vm);
+                ProfileViewModelConverter profileconv = new ProfileViewModelConverter();
+                UserContainer userContainer = new UserContainer(new UserDAL());
+                User user = userContainer.PullUserFromDatabase(Convert.ToInt32(HttpContext.Session.GetInt32("UserID")));
+                ProfileViewModel vm = new ProfileViewModel();
+                vm = profileconv.UserToViewModel(user);
+            if (vm != null)
+            { return View(vm); }
+            else { return View("Login"); }
         }
     }
 }

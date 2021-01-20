@@ -1,0 +1,30 @@
+﻿@model BlogpaginaViewModel
+@{ ViewData["Title"] = "BlogPagina";
+    Layout = "~/Views/Shared/_LayoutNonUser.cshtml"; }
+<head>
+    <link rel="stylesheet" media="screen" href="~/css/Blogpaginastyle.css" />
+</head>
+<h1>De Zenacoaching Blog</h1>
+
+@foreach (var blog in Model.blog)
+{
+
+    <table class="table-fill">
+        <thead>
+            <tr>
+                <th>Titel</th>
+                <th>Tekst</th>
+            </tr>
+        </thead>
+        <tbody class="table-hover">
+            <tr>
+                <td class="text-left">
+                    @blog.BlogTitel
+                </td>
+                <td class="text-left">
+                    @blog.BlogTekst
+                </td>
+            </tr>
+        </tbody>
+    </table>
+}

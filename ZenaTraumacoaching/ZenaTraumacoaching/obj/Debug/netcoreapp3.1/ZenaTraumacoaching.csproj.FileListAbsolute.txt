@@ -74,8 +74,6 @@ C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.csprojAssemblyReference.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.AssemblyInfoInputs.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.AssemblyInfo.cs
-C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.csproj.CoreCompileInputs.cache
-C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.RazorAssemblyInfo.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.RazorAssemblyInfo.cs
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\staticwebassets\ZenaTraumacoaching.StaticWebAssets.Manifest.cache
@@ -83,7 +81,6 @@ C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.TagHelpers.input.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.TagHelpers.output.cache
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.RazorCoreGenerate.cache
-C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Home.cshtml.g.cs
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Login.cshtml.g.cs
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Profiel.cshtml.g.cs
 C:\Users\Niels\Documents\Github\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Account\Registratie.cshtml.g.cs
@@ -107,3 +104,17 @@ C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Zena\Blogpagina.cshtml.g.cs
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Zena\Referentiepagina.cshtml.g.cs
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Zena\ReferentieBewerken.cshtml.g.cs
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Zena\BlogBewerken.cshtml.g.cs
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Shared\_LayoutNonUser.cshtml.g.cs
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Home\BlogpaginaNonUser.cshtml.g.cs
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\Razor\Views\Home\ReferentiepaginaNonUser.cshtml.g.cs
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Http.Features.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Microsoft.Extensions.Primitives.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\System.IO.Pipelines.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Server.Kestrel.Https.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Logic.dll.config
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\ZenaTraumacoaching.DAL.dll.config
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.csproj.CoreCompileInputs.cache
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.MvcApplicationPartsAssemblyInfo.cache

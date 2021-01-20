@@ -5,32 +5,30 @@
     <link rel="stylesheet" media="screen" href="~/css/Blogpaginastyle.css" />
 </head>
 <h1>De Zenacoaching Blog</h1>
-
-<button type="button" onclick="location.href='@Url.Action("blog","Zena")'">Toevoegen</button>
-@foreach (var blog in Model.blog)
-{
-
-    <table class="table-fill">
-        <thead>
-            <tr>
-                <th class="text-left">
-                    @blog.BlogTitel
-                </th>
-                <th></th>
-            </tr>
-        </thead>
-        <tbody class="table-hover">
-            <tr>
-                <td class="text-left">
-                    <label>@blog.BlogTekst</label>
-                </td>
-                <td class="text-left">
-                    <a href="/Zena/BlogPostDeleteClick/@blog.BlogID">Delete</a>
-                </td>
-                <td class="text-left">
-                    <a href="/Zena/BlogBewerken/@blog.BlogID">Update</a>
-                </td>
-            </tr>
-        </tbody>
-    </table>
-}
+    <button type="button" onclick="location.href='@Url.Action("blog","Zena")'">Toevoegen</button>
+    @foreach (var blog in Model.blog)
+    {
+        <table class="table-fill">
+            <thead>
+                <tr>
+                    <th>Titel</th>
+                    <th>Tekst</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody class="table-hover">
+                <tr>
+                    <td class="text-left">
+                        @blog.BlogTitel
+                    </td>
+                    <td class="text-left">
+                        @blog.BlogTekst
+                    </td>
+                        <td class="text-left">
+                            <a href="/Zena/BlogPostDeleteClick/@blog.BlogID">Delete</a>
+                            <a href="/Zena/BlogBewerken/@blog.BlogID">Update</a>
+                        </td>
+                </tr>
+            </tbody>
+        </table>
+    }

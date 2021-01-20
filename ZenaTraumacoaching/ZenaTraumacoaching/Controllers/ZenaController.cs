@@ -10,7 +10,8 @@ using Logic.Containers;
 using ZenaTraumacoaching.DAL.DTO;
 using ZenaTraumacoaching.DAL.DAL;
 using Logic;
-
+using ZenaTraumacoaching.DAL.Helpers;
+using Microsoft.AspNetCore.Http.Features;
 
 namespace ZenaTraumacoaching.Controllers
 {
@@ -32,10 +33,15 @@ namespace ZenaTraumacoaching.Controllers
         [HttpPost]
         public ActionResult BlogToevoegenClick(BlogViewModel model)
         {
-            ConvertBlogModel converter = new ConvertBlogModel();
-            Blog blog = converter.ConvertModelToBlogPost(model);
-            blog.AddBlogToDatabase(new BlogDAL());
-            return View("Blogpagina");
+            int ID = (int)HttpContext.Session.GetInt32("UserID");
+            if (ID == 7)
+            {
+                ConvertBlogModel converter = new ConvertBlogModel();
+                Blog blog = converter.ConvertModelToBlogPost(model);
+                blog.AddBlogToDatabase(new BlogDAL());
+                return RedirectToAction("Blogpagina");
+            }
+            else { return RedirectToAction("Blogpagina"); }
         }
 
         public IActionResult Blogpagina()
@@ -55,27 +61,42 @@ namespace ZenaTraumacoaching.Controllers
 
         public ActionResult BlogPostDeleteClick(string id)
         {
-            BlogContainer container = new BlogContainer(new BlogDAL());
-            container.DeleteBlogFromDatabase(Convert.ToInt32(id));
-            return RedirectToAction("Blogpagina");
+            int ID = (int)HttpContext.Session.GetInt32("UserID");
+            if (ID == 7)
+            {
+                BlogContainer container = new BlogContainer(new BlogDAL());
+                container.DeleteBlogFromDatabase(Convert.ToInt32(id));
+                return RedirectToAction("Blogpagina");
+            }
+            else { return RedirectToAction("Blogpagina"); }
         }
         [HttpPost]
         public ActionResult BlogUpdateClick(BlogViewModel model)
         {
-            ConvertBlogModel converter = new ConvertBlogModel();
-            Blog blog = converter.ConvertModelToBlogPost(model);
-            blog.BlogPostUpdate(new BlogDAL());
-            return RedirectToAction("Blogpagina");
+            int ID = (int)HttpContext.Session.GetInt32("UserID");
+            if (ID == 7)
+            {
+                ConvertBlogModel converter = new ConvertBlogModel();
+                Blog blog = converter.ConvertModelToBlogPost(model);
+                blog.BlogPostUpdate(new BlogDAL());
+                return RedirectToAction("Blogpagina");
+            }
+            else { return RedirectToAction("Blogpagina"); }
         }
 
         [HttpGet]
         public ActionResult BlogBewerken(string id)
         {
-            BlogContainer container = new BlogContainer(new BlogDAL());
-            container.GetBlogPost(Convert.ToInt32(id));
-            BlogToModel converter = new BlogToModel();
-            BlogViewModel model = converter.ConvertBlogToModel(container.GetBlogPost(Convert.ToInt32(id)));
-            return View(model);
+            int ID = (int)HttpContext.Session.GetInt32("UserID");
+            if (ID == 7)
+            {
+                BlogContainer container = new BlogContainer(new BlogDAL());
+                container.GetBlogPost(Convert.ToInt32(id));
+                BlogToModel converter = new BlogToModel();
+                BlogViewModel model = converter.ConvertBlogToModel(container.GetBlogPost(Convert.ToInt32(id)));
+                return View(model);
+            }
+            else { return RedirectToAction("Blogpagina"); }
         }
         [HttpPost]
         public ActionResult ReferentieToevoegenClick(ReferentieViewModel model)
@@ -103,17 +124,28 @@ namespace ZenaTraumacoaching.Controllers
 
         public ActionResult ReferentieDeleteClick(string id)
         {
-            ReferentieContainer container = new ReferentieContainer(new ReferentieDAL());
-            container.DeleteReferentieFromDatabase(Convert.ToInt32(id));
-            return RedirectToAction("Referentiepagina");
+            int ID = (int)HttpContext.Session.GetInt32("UserID");
+            if (ID == 7)
+            {
+                ReferentieContainer container = new ReferentieContainer(new ReferentieDAL());
+                container.DeleteReferentieFromDatabase(Convert.ToInt32(id));
+                return RedirectToAction("Referentiepagina");
+            }
+            else { return RedirectToAction("Referentiepagina"); }
         }
         [HttpPost]
         public ActionResult ReferentieUpdateClick(ReferentieViewModel model)
         {
-            ConvertReferentieModel converter = new ConvertReferentieModel();
-            Referentie referentie = converter.ConvertModelToReferentie(model);
-            referentie.ReferentieUpdate(new ReferentieDAL());
-            return RedirectToAction("Referentiepagina");
+            int ID = (int)HttpContext.Session.GetInt32("UserID");
+            if (ID == 7)
+            {
+                ConvertReferentieModel converter = new ConvertReferentieModel();
+                Referentie referentie = converter.ConvertModelToReferentie(model);
+                referentie.ReferentieUpdate(new ReferentieDAL());
+                return RedirectToAction("Referentiepagina");
+            }
+
+            else { return RedirectToAction("Referentiepagina"); }
         }
         
         [HttpGet]

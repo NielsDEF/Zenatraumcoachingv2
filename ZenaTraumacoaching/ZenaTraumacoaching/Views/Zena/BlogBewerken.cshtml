@@ -11,6 +11,7 @@
 
             <div asp-validation-summary="All" class="text-danger"></div>
             <div class="form_wrap">
+                <input hidden asp-for="BlogID" />
                 <div class="input_wrap">
                     <label asp-for="BlogTitel"></label>
                     <input asp-for="BlogTitel" class="form-control" />
