@@ -3,8 +3,6 @@
 
 body {
     background: #fff;
-    background: -webkit-linear-gradient(to left, #43C6AC, #191654);
-    background: linear-gradient(to left, #43C6AC, #191654);
     font-family: "Roboto", helvetica, arial, sans-serif;
     font-size: 16px;
     font-weight: 400;
@@ -69,6 +67,7 @@ div.table-title {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     animation: float 5s infinite;
     border: solid;
+    margin-top:20px;
 }
 
 th {

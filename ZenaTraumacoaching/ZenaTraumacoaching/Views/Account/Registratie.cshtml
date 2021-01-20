@@ -1,64 +1,66 @@
 ﻿@model ZenaTraumacoaching.Models.RegistratieViewModel
 @{ ViewData["Title"] = "Registratie";
-    Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutNonUser.cshtml";
 }
 <head>
     <link rel="stylesheet" media="screen" href="~/css/RegistratiePagina.css" />
 </head>
-<div class="wrapper">
-    <div class="registration_form">
-        <div class="title">
-            Registration Form
-        </div>
-
-        <form action="RegistreerClick" method="post">
-            <div class="form_wrap">
-                <div class="input_wrap">
-                    <label asp-for="Firstname"></label>
-                    <input asp-for="Firstname" />
-                    <span asp-validation-for="Firstname" class="text-danger"></span>
-                </div>
-                <div class="input_wrap">
-                    <label asp-for="Lastname"></label>
-                    <input asp-for="Lastname" class="form-control" />
-                    <span asp-validation-for="Lastname" class="text-danger"></span>
-                </div>
-                <div class="input_wrap">
-                    <label asp-for="Username"></label>
-                    <input asp-for="Username" />
-                    <span asp-validation-for="Username" class="text-danger"></span>
-                </div>
-                <div class="input_wrap">
-                    <label asp-for="Password"></label>
-                    <input asp-for="Password" />
-                    <span asp-validation-for="Password" class="text-danger"></span>
-                </div>
-                <div class="input_wrap">
-                    <label asp-for="Email"></label>
-                    <input asp-for="Email" />
-                    <span asp-validation-for="Email" class="text-danger"></span>
-                </div>
-                <div class="input_wrap">
-                    <label>Gender</label>
-                    <ul>
-                        <li>
-                            <label class="radio_wrap">
-                                <input type="radio" name="gender" value="male" class="input_radio" checked>
-                                <span>Male</span>
-                            </label>
-                        </li>
-                        <li>
-                            <label class="radio_wrap">
-                                <input type="radio" name="gender" value="female" class="input_radio">
-                                <span>Female</span>
-                            </label>
-                        </li>
-                    </ul>
-                </div>
-                <div class="input_wrap">
-                    <input type="submit" value="Registreren" class="submit_btn">
-                </div>
+<body>
+    <div class="wrapper">
+        <div class="registration_form">
+            <div class="title">
+                Registration Form
             </div>
-        </form>
+
+            <form action="RegistreerClick" method="post">
+                <div class="form_wrap">
+                    <div class="input_wrap">
+                        <label asp-for="Firstname"></label>
+                        <input asp-for="Firstname" />
+                        <span asp-validation-for="Firstname" class="text-danger"></span>
+                    </div>
+                    <div class="input_wrap">
+                        <label asp-for="Lastname"></label>
+                        <input asp-for="Lastname" class="form-control" />
+                        <span asp-validation-for="Lastname" class="text-danger"></span>
+                    </div>
+                    <div class="input_wrap">
+                        <label asp-for="Username"></label>
+                        <input asp-for="Username" />
+                        <span asp-validation-for="Username" class="text-danger"></span>
+                    </div>
+                    <div class="input_wrap">
+                        <label asp-for="Password"></label>
+                        <input asp-for="Password" />
+                        <span asp-validation-for="Password" class="text-danger"></span>
+                    </div>
+                    <div class="input_wrap">
+                        <label asp-for="Email"></label>
+                        <input asp-for="Email" />
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="input_wrap">
+                        <label>Gender</label>
+                        <ul>
+                            <li>
+                                <label class="radio_wrap">
+                                    <input type="radio" name="gender" value="male" class="input_radio" checked>
+                                    <span>Male</span>
+                                </label>
+                            </li>
+                            <li>
+                                <label class="radio_wrap">
+                                    <input type="radio" name="gender" value="female" class="input_radio">
+                                    <span>Female</span>
+                                </label>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="input_wrap">
+                        <input type="submit" value="Registreren" class="submit_btn">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-</div>
+</body>
