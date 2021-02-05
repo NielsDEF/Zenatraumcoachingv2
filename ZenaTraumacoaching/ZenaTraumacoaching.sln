@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenaTraumacoaching.Logic", 
 		{36952864-5476-4E46-81E0-7CD879FF94E7} = {36952864-5476-4E46-81E0-7CD879FF94E7}
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZenaTests", "ZenaTests\ZenaTests.csproj", "{F243B221-4620-470C-9A73-1CD74D7EA8D6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -30,6 +32,10 @@ Global
 		{ED2C87DB-1F9C-41F4-B71E-513429C1B0B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{ED2C87DB-1F9C-41F4-B71E-513429C1B0B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{ED2C87DB-1F9C-41F4-B71E-513429C1B0B7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F243B221-4620-470C-9A73-1CD74D7EA8D6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F243B221-4620-470C-9A73-1CD74D7EA8D6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F243B221-4620-470C-9A73-1CD74D7EA8D6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F243B221-4620-470C-9A73-1CD74D7EA8D6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

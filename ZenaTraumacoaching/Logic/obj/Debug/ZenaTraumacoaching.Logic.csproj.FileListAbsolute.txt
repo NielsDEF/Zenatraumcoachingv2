@@ -154,3 +154,5 @@ C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\Logic\bin
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\Logic\bin\Debug\System.Text.Json.xml
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\Logic\bin\Debug\System.Threading.Tasks.Extensions.xml
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\Logic\bin\Debug\System.ValueTuple.xml
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\Logic\bin\Debug\WebDriver.dll
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\Logic\bin\Debug\WebDriver.xml

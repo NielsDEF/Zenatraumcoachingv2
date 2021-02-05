@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "pg85wtU40lyxVxtwDr0kTbdo02yN5K1CfhYzoZvBoblf+p6y7EMGtIwSqdgc0Ha1hVgSQyEaEMIVKLEj1TgfiA==",
+  "dgSpecHash": "/ltFt4z4JjNz09uOu6pvnjXZvxl1YtcUMRnhq1+0J2auHEAFISH0jGxpKurS2CzaBiSUd8mjvmYCUor7r0XGHQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\Niels\\Documents\\GitHub\\Zenatraumcoachingv2\\ZenaTraumacoaching\\ZenaTraumacoaching\\ZenaTraumacoaching.csproj",
   "expectedPackageFiles": [
@@ -62,6 +62,8 @@
     "C:\\Users\\Niels\\.nuget\\packages\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-arm64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Niels\\.nuget\\packages\\runtime.win-x64.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x64.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
     "C:\\Users\\Niels\\.nuget\\packages\\runtime.win-x86.runtime.native.system.data.sqlclient.sni\\4.4.0\\runtime.win-x86.runtime.native.system.data.sqlclient.sni.4.4.0.nupkg.sha512",
+    "C:\\Users\\Niels\\.nuget\\packages\\selenium.chrome.webdriver\\85.0.0\\selenium.chrome.webdriver.85.0.0.nupkg.sha512",
+    "C:\\Users\\Niels\\.nuget\\packages\\selenium.webdriver\\3.141.0\\selenium.webdriver.3.141.0.nupkg.sha512",
     "C:\\Users\\Niels\\.nuget\\packages\\system.buffers\\4.5.0\\system.buffers.4.5.0.nupkg.sha512",
     "C:\\Users\\Niels\\.nuget\\packages\\system.componentmodel.annotations\\4.5.0\\system.componentmodel.annotations.4.5.0.nupkg.sha512",
     "C:\\Users\\Niels\\.nuget\\packages\\system.data.sqlclient\\4.8.2\\system.data.sqlclient.4.8.2.nupkg.sha512",

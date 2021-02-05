@@ -116,5 +116,6 @@ C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraum
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Server.Kestrel.Transport.Abstractions.dll
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\Logic.dll.config
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\ZenaTraumacoaching.DAL.dll.config
+C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\bin\Debug\netcoreapp3.1\WebDriver.dll
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.csproj.CoreCompileInputs.cache
 C:\Users\Niels\Documents\GitHub\Zenatraumcoachingv2\ZenaTraumacoaching\ZenaTraumacoaching\obj\Debug\netcoreapp3.1\ZenaTraumacoaching.MvcApplicationPartsAssemblyInfo.cache
